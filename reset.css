@@ -1,0 +1,219 @@
+/* Configure in case the user wants to use high contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primario: black;
+    --color-secundario: white;
+  }
+}
+
+/* Disable animations in case the user want to use reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Reset margins and paddings in all tags */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+acronym,
+strike,
+strong,
+sup,
+tt,
+sub,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Reset images to avoid future problems */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* optional */
+  object-fit: cover;
+  /* optional */
+  object-position: center center;
+}
+
+/* Reset links to make they work as boxes */
+a {
+  display: block;
+}
+/* Except the ones inside paragraphs */
+p a {
+  display: inline;
+}
+
+/* Remove dots in <li> */
+li {
+  list-style-type: none;
+}
+
+/* Make the scroll smooth and set the font size to make 1 rem == 10px... */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Disable default styles in the main text tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+/* Avoiding problems with quotes pseudoelements */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Make typography in forms make sense */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  border: 0;
+  /* Optional */
+  appearance: none;
+}
+
+/* Reset the tables */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Avoiding problems with SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Setting the typography for all the web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  /* optional */
+  line-height: 1.4em;
+  /* optional */
+  font-smooth: always;
+  /* optional */
+  -webkit-font-smoothing: antialiased;
+  /* optional */
+  -moz-osx-font-smoothing: grayscale;
+}
