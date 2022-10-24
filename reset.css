@@ -9,7 +9,7 @@
 */
 /* Aquí definimos las Custom properties */
 :root {
-  --negro: #393939;
+  --negro: #000;
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
@@ -18,7 +18,7 @@
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --negro: #ececec;
+    --negro: #000;
   }
 }
 /* Opcional */
@@ -77,7 +77,7 @@ li {
 /* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
-  
+  font-size: 62.5%;
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
